@@ -1,0 +1,6 @@
+<ng-template #loading>
+  <div class="weather-loader">Chargement...</div>
+</ng-template>
+<div *ngIf="response; else loading">
+  <pre>{{ response | json }}</pre>
+</div>
