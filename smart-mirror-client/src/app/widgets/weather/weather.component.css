@@ -1,0 +1,22 @@
+i.weather-icon {
+  font-size: 5em;
+  display: inline-block;
+  float: left;
+  margin: 10px 30px 10px 10px;
+}
+span {
+  display: block;
+}
+
+span i {
+  margin-right: 10px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+:host {
+  font-weight: bold;
+}

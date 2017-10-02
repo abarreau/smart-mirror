@@ -1,6 +1,9 @@
 <ng-template #loading>
   <div class="weather-loader">Chargement...</div>
 </ng-template>
-<div *ngIf="response; else loading">
-  <pre>{{ response | json }}</pre>
+<div *ngIf="weather; else loading">
+  <i class="weather-icon wi {{ weather.iconClass }}"></i>
+  <h2>{{ weather.name }}</h2>
+  <span><i class="wi wi-thermometer"></i>{{ weather.main.temp | number:'1.0-1' }} °C</span>
+  <span><i class="wi wi-strong-wind"></i>{{ weather.wind.speed * 3.6 | number:'1.0-0' }} km/h</span>
 </div>
