@@ -4,6 +4,12 @@ i.weather-icon {
   float: left;
   margin: 10px 30px 10px 10px;
 }
+
+span .wi {
+  width: 20px;
+  text-align: right;
+}
+
 span {
   display: block;
 }
