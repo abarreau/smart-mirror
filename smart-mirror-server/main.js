@@ -7,6 +7,11 @@ function getWifiName(req, res, next) {
             "wifiName": name
         });
         next();
+    }).catch(error => {
+        res.send({
+            "wifiName": 'Could not fetch your Wifi name.'
+        });
+        next();
     });
 }
 
