@@ -3,19 +3,28 @@ import { CommonModule } from '@angular/common';
 import { ClockComponent } from './clock/clock.component';
 import { WeatherComponent } from './weather/weather.component';
 import { HttpClientModule } from '@angular/common/http';
+import { WifiNameComponent } from './wifi-name/wifi-name.component';
+import { MatProgressSpinnerModule } from '@angular/material';
+import { WifiNameService } from './wifi-name/wifi-name.service';
 
 @NgModule({
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule
   ],
   declarations: [
     ClockComponent,
-    WeatherComponent
+    WeatherComponent,
+    WifiNameComponent
   ],
   exports: [
     ClockComponent,
-    WeatherComponent
+    WeatherComponent,
+    WifiNameComponent
+  ],
+  providers: [
+    WifiNameService
   ]
 })
 export class WidgetsModule { }

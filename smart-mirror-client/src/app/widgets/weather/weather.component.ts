@@ -29,7 +29,6 @@ export class WeatherComponent implements OnInit {
     this.httpClient
       .get(this.API_URL + this.API_KEY + "&q=" + this.city + this.API_OPTIONS + this.units)
       .subscribe((result) => {
-        console.log(result);
         this.weather = jsonWeatherToModel(result);
       });
   }

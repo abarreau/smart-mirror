@@ -1,0 +1,5 @@
+<p *ngIf="wifiName; else loading">
+  {{ wifiName }}
+</p>
+
+<ng-template #loading>Connexion au serveur du widget  wifi en cours...</ng-template>
