@@ -16,12 +16,12 @@ import { WifiNameService } from './wifi-name/wifi-name.service';
   declarations: [
     ClockComponent,
     WeatherComponent,
-    WifiNameComponent
+    WifiNameComponent,
   ],
   exports: [
     ClockComponent,
     WeatherComponent,
-    WifiNameComponent
+    WifiNameComponent,
   ],
   providers: [
     WifiNameService
