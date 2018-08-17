@@ -15,7 +15,7 @@ export class ClockComponent implements OnInit, OnDestroy {
     public clockFormat = 'HH:mm';
 
     @Input()
-    public dateFormat = 'EEEE d MMM y';
+    public dateFormat = 'EEEE d MMM';
 
     @Input()
     public refreshDelay = 1000;
