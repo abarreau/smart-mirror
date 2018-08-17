@@ -7,6 +7,7 @@ import { WifiNameComponent } from './wifi-name/wifi-name.component';
 import { MatProgressSpinnerModule } from '@angular/material';
 import { WifiNameService } from './wifi-name/wifi-name.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TramScheduleComponent } from './montpellier-tramway-schedule/tram-schedule.component';
 
 @NgModule({
   imports: [
@@ -19,11 +20,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ClockComponent,
     WeatherComponent,
     WifiNameComponent,
+    TramScheduleComponent
   ],
   exports: [
     ClockComponent,
     WeatherComponent,
     WifiNameComponent,
+    TramScheduleComponent
   ],
   providers: [
     WifiNameService
