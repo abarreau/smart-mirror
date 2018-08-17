@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { WifiNameComponent } from './wifi-name/wifi-name.component';
 import { MatProgressSpinnerModule } from '@angular/material';
 import { WifiNameService } from './wifi-name/wifi-name.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FontAwesomeModule
   ],
   declarations: [
     ClockComponent,

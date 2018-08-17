@@ -1,5 +1,5 @@
 <p *ngIf="wifiName; else loading">
-  {{ wifiName }}
+  <fa-icon [icon]="wifiIcon"></fa-icon><label class="wifi-name">{{ wifiName }}</label>
 </p>
 
-<ng-template #loading>Connexion au serveur du widget  wifi en cours...</ng-template>
+<ng-template #loading>Connexion au serveur du widget wifi en cours...</ng-template>
