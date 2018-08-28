@@ -6,4 +6,5 @@
 export const environment = {
   production: false,
   WEATHER_API_KEY: '358173e892c709a80d7151654483ef94',
+  SERVER_HOST: 'http://localhost:8080'
 };

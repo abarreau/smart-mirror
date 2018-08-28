@@ -1,0 +1,24 @@
+<div *ngIf="!isLoading; else loading">
+  <div class="title">
+    Next departure from
+    <span class="tram-stop" *ngIf="schedule[TRAM_STOP_KEY]">{{ schedule[TRAM_STOP_KEY][0]?.name }}</span>
+    <span>
+      <mat-progress-spinner [diameter]="20" *ngIf="isRefreshing" class="spinner-inlined"
+                            [mode]="'indeterminate'"></mat-progress-spinner>
+    </span>
+  </div>
+
+  <ul *ngIf="schedule[TRAM_STOP_KEY]" [class.refreshing]="isRefreshing">
+    <li *ngFor="let tramStop of schedule[TRAM_STOP_KEY] ">
+      <span class="tram-line tram-line-{{ tramStop.line }}">
+        {{ tramStop.line }}
+      </span>
+      {{ tramStop.departureTime }}
+    </li>
+  </ul>
+
+</div>
+
+<ng-template #loading>
+  <mat-progress-spinner [mode]="'indeterminate'"></mat-progress-spinner>
+</ng-template>

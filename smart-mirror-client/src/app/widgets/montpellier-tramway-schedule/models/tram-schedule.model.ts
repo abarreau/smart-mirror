@@ -1,5 +1,9 @@
-import { LocalDateTime } from 'js-joda';
-
 export interface TramwayScheduleDTO {
-  [stop: string] : Array<LocalDateTime>
+  [stop: string] : TramwayStop[];
+}
+
+export interface TramwayStop {
+  name: string;
+  line: string;
+  departureTime: string;
 }

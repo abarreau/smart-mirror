@@ -1,0 +1,57 @@
+.title {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  line-height: 30px;
+}
+
+.tram-stop {
+  font-weight: bold;
+}
+
+.tram-line {
+  border-radius: 2px;
+  padding: 2px 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.tram-line-1 {
+  background-color: #0055a5;
+}
+
+.tram-line-2 {
+  background-color: #f48d00;
+}
+
+.tram-line-3 {
+ background-color: #cbd500;
+}
+
+.tram-line-4 {
+  background-color: #532814;
+}
+
+.tram-line-5 {
+
+}
+
+.spinner-inlined {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.refreshing {
+  color: #999;
+}
+
+li {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}

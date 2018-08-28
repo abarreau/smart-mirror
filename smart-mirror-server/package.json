@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "=4.16.3",
     "axios": "=0.18.0",
-    "wifi-name": "^3.1.1"
+    "wifi-name": "^3.1.1",
+    "js-joda": "=1.9.1"
   }
 }
